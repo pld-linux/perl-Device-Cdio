@@ -7,14 +7,15 @@
 Summary:	Device::Cdio - Perl bindings for CD input and control library (libcdio)
 Summary(pl.UTF-8):	Device::Cdio - wiązania Perla do biblioteki wejścia i sterowania CD (libcdio)
 Name:		perl-Device-Cdio
-Version:	0.3.0
+Version:	0.4.0
 Release:	1
 License:	GPL v3+
 Group:		Development/Languages/Perl
 Source0:	http://ftp.gnu.org/gnu/libcdio/Device-Cdio-v%{version}.tar.gz
-# Source0-md5:	325a17ea73073d532ace8406ca08b5d8
+# Source0-md5:	5f5695c0997383b9b622704176ae4a39
+Patch:		%{name}-update.patch
 URL:		http://search.cpan.org/dist/Device-Cdio/
-BuildRequires:	libcdio-devel >= 0.82
+BuildRequires:	libcdio-devel >= 0.92
 BuildRequires:	perl-ExtUtils-CBuilder >= 0.28
 BuildRequires:	perl-ExtUtils-PkgConfig >= 1.03
 BuildRequires:	perl-Module-Build >= 0.38 
@@ -24,7 +25,8 @@ BuildRequires:	perl-Test-Pod-Coverage >= 1.08
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-Requires:	libcdio >= 0.82
+BuildRequires:	swig-perl
+Requires:	libcdio >= 0.92
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -37,6 +39,10 @@ CD (libcdio).
 
 %prep
 %setup -q -n Device-Cdio-v%{version}
+%patch0 -p1
+
+# force swig rebuild
+%{__rm} *_wrap.c
 
 %build
 %{__perl} Build.PL \
