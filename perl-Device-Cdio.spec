@@ -14,7 +14,7 @@ Group:		Development/Languages/Perl
 Source0:	http://search.cpan.org/CPAN/authors/id/R/RO/ROCKY/Device-Cdio-v%{version}.tar.gz
 # Source0-md5:	9f421fbd736a7099eb0525cd64c8b6e4
 URL:		http://search.cpan.org/dist/Device-Cdio/
-BuildRequires:	libcdio-devel >= 0.92
+BuildRequires:	libcdio-devel >= 2.0.0
 BuildRequires:	perl-ExtUtils-CBuilder >= 0.28
 BuildRequires:	perl-ExtUtils-PkgConfig >= 1.03
 BuildRequires:	perl-Module-Build >= 0.38 
