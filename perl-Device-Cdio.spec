@@ -8,7 +8,7 @@ Summary:	Device::Cdio - Perl bindings for CD input and control library (libcdio)
 Summary(pl.UTF-8):	Device::Cdio - wiązania Perla do biblioteki wejścia i sterowania CD (libcdio)
 Name:		perl-Device-Cdio
 Version:	2.0.0
-Release:	3
+Release:	4
 License:	GPL v3+
 Group:		Development/Languages/Perl
 Source0:	http://search.cpan.org/CPAN/authors/id/R/RO/ROCKY/Device-Cdio-v%{version}.tar.gz
