@@ -3,7 +3,6 @@
 # Conditional build:
 %bcond_with	tests	# do perform "make test" (some tests fail, probably specific env. is expected)
 #
-%include	/usr/lib/rpm/macros.perl
 Summary:	Device::Cdio - Perl bindings for CD input and control library (libcdio)
 Summary(pl.UTF-8):	Device::Cdio - wiązania Perla do biblioteki wejścia i sterowania CD (libcdio)
 Name:		perl-Device-Cdio
