@@ -10,9 +10,9 @@ Version:	2.0.0
 Release:	9
 License:	GPL v3+
 Group:		Development/Languages/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/R/RO/ROCKY/Device-Cdio-v%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Device/Device-Cdio-v%{version}.tar.gz
 # Source0-md5:	9f421fbd736a7099eb0525cd64c8b6e4
-URL:		http://search.cpan.org/dist/Device-Cdio/
+URL:		https://metacpan.org/dist/Device-Cdio
 BuildRequires:	libcdio-devel >= 2.0.0
 BuildRequires:	perl-ExtUtils-CBuilder >= 0.28
 BuildRequires:	perl-ExtUtils-PkgConfig >= 1.03
