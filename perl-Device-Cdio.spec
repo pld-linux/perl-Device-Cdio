@@ -1,7 +1,7 @@
 # TODO: fix strange modules install dir?
 #
 # Conditional build:
-%bcond_with	tests	# do perform "make test" (some tests fail, probably specific env. is expected)
+%bcond_with	tests	# unit tests (some tests fail, probably specific env. is expected)
 #
 Summary:	Device::Cdio - Perl bindings for CD input and control library (libcdio)
 Summary(pl.UTF-8):	Device::Cdio - wiązania Perla do biblioteki wejścia i sterowania CD (libcdio)
@@ -23,6 +23,7 @@ BuildRequires:	perl-Test-Pod-Coverage >= 1.08
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildRequires:	swig-perl
 Requires:	libcdio >= 2.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
